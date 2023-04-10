@@ -35,9 +35,11 @@ void main()
 {
   fun();
 }
+
 2. Compile the driver program.
 
 gcc -c driver.c -o driver.o
+
 3. Link the compiled driver program to the static library. Note that -L. is used to tell that the static library is in current folder (See this for details of -L and -l options).
 
 gcc -o driver driver.o -L. -l_mylib
